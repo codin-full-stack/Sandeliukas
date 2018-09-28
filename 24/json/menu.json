@@ -1,0 +1,23 @@
+{
+    "menu":{
+        "header":"SVG Viewer",
+        "items":[
+            {
+                "id":"index.php",
+                "label":"Anketa"
+
+            },
+            {
+                "id":"data.php",
+                "label":"Sarasas" 
+            
+            },
+        
+            {
+                "id":"searchform.php",
+                "label":"Paieska"
+            }
+            
+        ]
+    }
+}

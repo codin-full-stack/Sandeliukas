@@ -1,0 +1,61 @@
+body {
+
+    background-color:rgb(228, 208, 183);
+    font-size: 18;
+    text-align: center;
+    color: royalblue;
+    
+}
+
+
+header {
+    width: 320px;
+    height: 200px;
+    background-color:white;
+    margin: auto;
+    margin-top: 100px;
+    padding-top: 30px;
+    text-align: center;
+    color: blue;
+    
+  
+
+}
+button {
+    width: 80px;
+    height: 27px;
+    background-color:rgb(92, 116, 189);
+    font-style: oblique;
+    font-weight: bold;
+    color: antiquewhite;
+    margin:10px;
+    border: none;
+   
+}
+
+.button:hover {
+    width: 80px;
+    height: 25px;
+    background-color:rgb(223, 156, 179);
+    color:rgb(92, 116, 189);
+    font-style: oblique;
+    font-style: oblique;
+    font-weight: bold;
+    margin:10px;
+    border: none;
+   
+}
+.input {
+    width: 160px;
+    height: 22px;
+    background-color: antiquewhite;
+    margin:5px;
+}
+.input:hover {
+    width: 160px;
+    height: 22px;
+    background-color: white;
+    margin:5px;
+}
+
+

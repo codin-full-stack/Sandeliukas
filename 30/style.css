@@ -1,0 +1,155 @@
+body {
+
+    background-color:burlywood;
+    font-size: 18;
+    text-align: center;
+    color:rgb(92, 116, 189);
+    margin-top: 35px;
+    
+}
+
+header{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 30px;
+    background-color:rgb(190, 100, 127);
+    color: white;
+    padding-top: 5px;
+
+}    
+    
+   
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color:rgb(190, 100, 127);
+    color: white;
+    padding-top: 5px;
+    text-align: center;
+}
+
+table {
+    border: 2px solid rgb(99, 54, 4);
+   
+    
+}
+
+td, th {
+    border: 1px solid rgb(99, 54, 4);
+    
+    padding: 5px;
+    text-align: left;
+}
+
+select {
+    width: 178px;
+    height: 25px;
+    background-color: antiquewhite;
+}
+select:hover {
+    width: 178px;
+    height: 25px;
+    background-color: white;
+}
+
+.menu {
+    top: 35px;
+    float: left;
+    position: fixed;
+}
+
+
+.menu a {
+    display: inline-block;
+    background-color: rgb(92, 116, 189);
+    width: 100px;
+    border-style: solid;
+    border-color:rgb(162, 197, 230);
+    border-width: 2px;
+    color: rgb(212, 171, 192);
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+/* Change the link color on hover */
+.menu a:hover {
+    background-color:rgb(212, 171, 192);
+    color: rgb(92, 116, 189);
+}
+
+#myP1{
+  
+    width: 800px;
+    height: 100%;
+    background-color:rgb(137, 230, 186);
+    margin: auto;
+    /* margin-top: 100px; */
+    padding-top: 30px;
+    padding-bottom: 50px;
+    text-align: center;
+    font-size: 14px;
+    color:rgb(26, 34, 58);
+    /* border-style: solid;
+    border-color: rgb(204, 151, 131);
+    /* border-width: 7px; */
+  
+}
+.myP2{
+
+    width: 800px;
+    min-height: 850px;
+    background-color:rgb(162, 197, 230);
+    margin: auto;
+    /* margin-top: 100px; */
+    padding-top: 20px;
+    padding-left: 50px;
+    padding-bottom: 50px;
+    text-align: left;
+    font-size: 14px;
+    color:rgb(26, 34, 58);
+    /* border-style: solid;
+    border-color:  rgb(204, 151, 131);
+    border-width: 7px; */
+}
+
+button {
+    width: 80px;
+    height: 27px;
+    background-color:rgb(74, 93, 151);
+    font-style: oblique;
+    font-weight: bold;
+    color: antiquewhite;
+    margin:10px;
+    border: none;
+   
+}
+
+.button:hover {
+    width: 80px;
+    height: 27px;
+    background-color:rgb(148, 55, 83);
+    color: antiquewhite;
+    font-style: oblique;
+    font-style: oblique;
+    font-weight: bold;
+    margin:10px;
+    border: none;
+   
+}
+.input {
+    width: 173px;
+    height: 19px;
+    background-color: antiquewhite;
+
+}
+.input:hover {
+    width: 173px;
+    height: 19px;
+    background-color: white;
+
+}
+

@@ -1,0 +1,296 @@
+[
+    {
+        "vardas": "Jonas",
+        "pavarde": "Petraitis",
+        "amzius": "99",
+        "miestas": "Varena",
+        "telefonas": "",
+        "adresas": "Grybu 10",
+        "mailas": ""
+    },
+    {
+        "vardas": "Onyte",
+        "pavarde": "Onaityte",
+        "amzius": "26",
+        "miestas": "Prienai",
+        "telefonas": "867442256",
+        "adresas": "Liepyno 21-32",
+        "mailas": "onyte@mail.com"
+    },
+    {
+        "vardas": "Osama",
+        "pavarde": "Kazkoks",
+        "amzius": "120",
+        "miestas": "Nieko nepasirnkta",
+        "telefonas": "375254656",
+        "adresas": "",
+        "mailas": ""
+    },
+    {
+        "vardas": "Zanas Klodas",
+        "pavarde": "VanDamas",
+        "amzius": "57",
+        "miestas": "Panevezys",
+        "telefonas": "370542689452",
+        "adresas": "Kinostudija",
+        "mailas": "damas@mail.lt"
+    },
+    {
+        "vardas": "Vita",
+        "pavarde": "Vitale",
+        "amzius": "21",
+        "miestas": "Vilnius",
+        "telefonas": "5846545464546",
+        "adresas": "namas 1",
+        "mailas": "vv@mail.com"
+    },
+    {
+        "vardas": "Vasia",
+        "pavarde": "Vasickinas",
+        "amzius": "16",
+        "miestas": "Siauliai",
+        "telefonas": "65446554645",
+        "adresas": "",
+        "mailas": "vasia@mail.com"
+    },
+    {
+        "vardas": "Juozas",
+        "pavarde": "Valio",
+        "amzius": "43",
+        "miestas": "Kaunas",
+        "telefonas": "6544",
+        "adresas": "namu 32-5",
+        "mailas": "as@mail.com"
+    },
+    {
+        "vardas": "Kazys",
+        "pavarde": "Kazenas",
+        "amzius": "42",
+        "miestas": "Prienai",
+        "telefonas": "6545641654",
+        "adresas": "gdcewg 10-5",
+        "mailas": "bbb@lalsal"
+    },
+    {
+        "vardas": "tra",
+        "pavarde": "lialia",
+        "amzius": "18",
+        "miestas": "Klaipeda",
+        "telefonas": "57",
+        "adresas": "Grybu 10",
+        "mailas": "damas@mail.lt"
+    },
+
+    {
+        "vardas": "gfhtrh",
+        "pavarde": "rhtr",
+        "amzius": "88",
+        "miestas": "Klaipeda",
+        "telefonas": "65446554645",
+        "adresas": "namu 32-5",
+        "mailas": "vasia@mail.com"
+    },
+    {
+        "vardas": "Vardasfdewrf",
+        "pavarde": "qwedwqe",
+        "amzius": "323232",
+        "miestas": "Kaunas",
+        "telefonas": "370542689452",
+        "adresas": "Liepyno 21-32",
+        "mailas": "vasia@mail.com"
+    },
+
+    {
+        "vardas": "Petras",
+        "pavarde": "Petraitis",
+        "amzius": "55",
+        "miestas": "Panevezys",
+        "telefonas": "24354",
+        "adresas": "6-55",
+        "mailas": "a@kwdskw"
+    },
+    {
+        "vardas": "Jonas",
+        "pavarde": "Jonaitis",
+        "amzius": "55",
+        "miestas": "Klaipeda",
+        "telefonas": "370542689452",
+        "adresas": "Liepyno 21-32",
+        "mailas": "as@mail.com"
+    },
+    {
+        "vardas": "Jonas",
+        "pavarde": "Jonaitis",
+        "amzius": "52",
+        "miestas": "Kaunas",
+        "telefonas": "52415644",
+        "adresas": "Liepyno 21-32",
+        "mailas": "shiuwq@djkjwhd"
+    },
+    {
+        "vardas": "Ona",
+        "pavarde": "Onaityte",
+        "amzius": "29",
+        "miestas": "Vilnius",
+        "telefonas": "5645564",
+        "adresas": "Kinostudija",
+        "mailas": "onyte@mail.com"
+    },
+    {
+        "vardas": "Zanas Klodas",
+        "pavarde": "VanDamas",
+        "amzius": "54",
+        "miestas": "Nieko nepasirnkta",
+        "telefonas": "",
+        "adresas": "Kinostudija",
+        "mailas": "damas@mail.lt"
+    },
+    {
+        "vardas": "Vasia",
+        "pavarde": "Vasickinas",
+        "amzius": "18",
+        "miestas": "Siauliai",
+        "telefonas": "6544",
+        "adresas": "namas 1",
+        "mailas": "vv@mail.com"
+    },
+    {
+        "vardas": "Aur",
+        "pavarde": "Kazl",
+        "amzius": "41",
+        "miestas": "Vilnius",
+        "telefonas": "370542689452",
+        "adresas": "namas 1",
+        "mailas": "7477@4141"
+    },
+    {
+        "vardas": "Rasa",
+        "pavarde": "Rassaite",
+        "amzius": "22",
+        "miestas": "Klaipeda",
+        "telefonas": "54654",
+        "adresas": "Grybu 10",
+        "mailas": "onyte@mail.com"
+    },
+    {
+        "vardas": "Inga",
+        "pavarde": "Valinskiene",
+        "amzius": "58",
+        "miestas": "Kaunas",
+        "telefonas": "370542689452",
+        "adresas": "Grybu 10",
+        "mailas": "as@mail.com"
+    },
+    {
+        "vardas": "As",
+        "pavarde": "Tu",
+        "amzius": "15",
+        "miestas": "Varena",
+        "telefonas": "22222",
+        "adresas": "A2-2",
+        "mailas": "a@a"
+    },
+
+    {
+        "vardas": "Beta",
+        "pavarde": "Gama",
+        "amzius": "28",
+        "miestas": "Klaipeda",
+        "telefonas": "3333",
+        "adresas": "56-33",
+        "mailas": ""
+    },
+    {
+        "vardas": "S",
+        "pavarde": "S",
+        "amzius": "2",
+        "miestas": "Klaipeda",
+        "telefonas": "45254",
+        "adresas": "",
+        "mailas": ""
+    },
+    {
+        "vardas": "T",
+        "pavarde": "R",
+        "amzius": "11",
+        "miestas": "Varena",
+        "telefonas": "",
+        "adresas": "",
+        "mailas": ""
+    },
+    {
+        "vardas": "Aur",
+        "pavarde": "S",
+        "amzius": "44",
+        "miestas": "Panevezys",
+        "telefonas": "222",
+        "adresas": "Grybu 10",
+        "mailas": "as@mail.com"
+    },
+
+    {
+        "vardas": "Vytas",
+        "pavarde": "Vytenis",
+        "amzius": "57",
+        "miestas": "Siauliai",
+        "telefonas": "3333",
+        "adresas": "Varnu 6",
+        "mailas": "vytas@mail.com"
+    },
+
+    {
+        "vardas": "Vytasss",
+        "pavarde": "Vytenis",
+        "amzius": "57",
+        "miestas": "Kaunas",
+        "telefonas": "3333",
+        "adresas": "Varnu 6",
+        "mailas": "vytas@mail.com"
+    },
+    {
+        "vardas": "Simas",
+        "pavarde": "Jasaitis",
+        "amzius": "34",
+        "miestas": "Kaunas",
+        "telefonas": "370542689452",
+        "adresas": "Liepyno 21-32",
+        "mailas": "simas@mail.lt"
+    },
+
+    {
+        "vardas": "Q",
+        "pavarde": "S",
+        "amzius": "444",
+        "miestas": "Kaunas",
+        "telefonas": "5454",
+        "adresas": "yukj",
+        "mailas": "as@mail.com"
+    },
+    {
+        "vardas": "thjyt",
+        "pavarde": "thyh",
+        "amzius": "5555",
+        "miestas": "Klaipeda",
+        "telefonas": "370542689452",
+        "adresas": "Grybu 10",
+        "mailas": "damas@mail.lt"
+    },
+    {
+        "vardas": "tgrg",
+        "pavarde": "erger",
+        "amzius": "4334",
+        "miestas": "Kaunas",
+        "telefonas": "370542689452",
+        "adresas": "yukj",
+        "mailas": "onyte@mail.com"
+    },
+    {
+        "vardas": "Ona",
+        "pavarde": "Petraitis",
+        "amzius": "22",
+        "miestas": "",
+        "telefonas": "",
+        "adresas": "",
+        "mailas": ""
+    }
+]

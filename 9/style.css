@@ -1,0 +1,40 @@
+body {
+
+    background-color:burlywood;
+}
+
+
+header {
+    width: 320px;
+    height: 350px;
+    background-color:white;
+    margin: auto;
+    margin-top: 100px;
+    padding-top: 30px;
+    text-align: center;
+    color: blue;
+    
+  
+
+}
+button {
+    width: 100px;
+    height: 40px;
+    background-color:royalblue;
+    margin:30px;
+    border: none;
+   
+}
+
+.button:hover {
+    width: 100px;
+    height: 40px;
+    background-color:red;
+    margin:30px;
+    border: none;
+   
+}
+
+}
+
+

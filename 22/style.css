@@ -1,0 +1,26 @@
+body {
+
+    background-color:burlywood;
+   
+}
+
+
+.menu a {
+    display: inline-block;
+    background-color: rgb(14, 179, 165);
+    width: 100px;
+    border-style: solid;
+    border-color: rgb(31, 107, 84);
+    border-width: 2px;
+    color: rgb(29, 30, 80);
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+/* Change the link color on hover */
+.menu a:hover {
+    background-color: rgb(179, 14, 14);
+    color: white;
+}
+
+

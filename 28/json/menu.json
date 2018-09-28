@@ -1,0 +1,33 @@
+{
+    "menu":{
+        "header":"SVG Viewer",
+        "items":[
+            {
+                "id":"logform.php",
+                "label":"Login" 
+            
+            },
+            {
+                "id":"admin.php",
+                "label":"Profilis" 
+            
+            },
+            {
+                "id":"index.php",
+                "label":"Anketa"
+
+            },
+            {
+                "id":"data.php",
+                "label":"Sąrašas" 
+            
+            },
+        
+            {
+                "id":"searchform.php",
+                "label":"Paieška"
+            }
+            
+        ]
+    }
+}
