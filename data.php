@@ -35,8 +35,10 @@ if($result = mysqli_query($conn, $sql)){
                 echo "<td>" . $row['age'] . "</td>";
                 echo "<td>" . $row['phone'] . "</td>";
                 echo "<td>" . $row['mail'] . "</td>";
-                echo "<td>" . $row['photo'] . "</td>";
-               
+                // echo "<td>" . $row['photo'] . "</td>";
+                if (!empty($row['photo'])){
+                echo "<td><img src=". $row['photo'] ." alt=\"\"  width='50'  /></td>";
+                }
             echo "</tr>";
         }
         echo "</table>";

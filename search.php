@@ -56,7 +56,7 @@ if($result = mysqli_query($conn, $sql)){
 }
 
 
-$sql = "SELECT hint.userid, hint.postid, hint.title, hint.content, person_information.name, person_information.surname, hint.date, hint.time
+$sql = "SELECT hint.userid, hint.postid, hint.title, hint.content,  hint.postimg, person_information.name, person_information.surname, person_information.photo, hint.date, hint.time
 FROM hint
 JOIN person_information ON hint.userid = person_information.id
 ORDER BY hint.time DESC";
@@ -69,7 +69,13 @@ if($result = mysqli_query($conn, $sql)){
                 
             if ((($_GET['name'])==($row['name']) )and ( ($_GET['surname'])==($row['surname']) )){
                 echo "<h1>". $row['title']."</h1>";               
-                echo $row['content'] . "<br><br>";           
+                echo $row['content'] . "<br><br>";   
+                if (!empty($row['postimg'])){
+                    echo "<img src=". $row['postimg'] ." alt=\"\"  width='800'  /><br><br>";      
+                    }     
+                if (!empty($row['photo'])){
+                    echo "<img src=". $row['photo'] ." alt=\"\"  width='50'  /><br>";      
+                    }                  
                 echo $row['name'] ."  ". $row['surname'] . "<br>";               
                 echo $row['date'] . "<br>";
                 echo "<a href='post.php?postid=".$row['postid']."'>Skaityti straipsnį >>></a><br><br><br>";   
