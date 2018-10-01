@@ -41,7 +41,7 @@ if($result = mysqli_query($conn, $sql)){
                         echo "<img src=". $row['postimg'] ." alt=\"\"  width='800'  /><br><br>";      
                         }     
                     if (!empty($row['photo'])){
-                    echo "<img src=". $row['photo'] ." alt=\"\"  width='50'  /><br>";      
+                        echo "<img src=". $row['photo'] ." alt=\"\"  width='50'  /><br>";      
                     }
                     echo $row['name'] ."  ". $row['surname'] . "<br>";               
                     echo $row['date'] . "<br>";
