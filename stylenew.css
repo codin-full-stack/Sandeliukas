@@ -1,0 +1,329 @@
+body {
+
+    background-color:#4AA270;
+    font-size: 18;
+    color:rgb(92, 116, 189);
+    margin-top: 40px;
+    margin-bottom: 40px;
+    
+}
+
+ header{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 30px;
+    background-color:rgb(190, 100, 127);
+    color: white;
+    padding-top: 5px; 
+    padding-bottom: 5px;
+    text-align: center;
+
+}    
+
+   
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color:rgb(190, 100, 127);
+    color: white;
+    padding-top: 5px;
+    text-align: center;
+}
+
+table {
+    border: 2px solid rgb(99, 54, 4);
+   
+    
+}
+
+td, th {
+    border: 1px solid rgb(99, 54, 4);
+    
+    padding: 5px;
+    text-align: left;
+    vertical-align: top;
+} 
+
+
+
+.panel {
+    height: auto;
+    width: 400px;
+    background-color: #ffffff;
+    margin-top: 90px;
+    left:0;
+    margin-left: auto;
+    right:0;
+    margin-right: auto;
+    
+}
+.btnpanel{
+    width: 400px;
+    height: 50px;
+    top: 0;
+    background-color: #ffffff;
+
+}
+.btnlog{
+    float: left;
+    background-color:#ffffff;
+    height: 100%;
+    width: 50%;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    color: #000000;
+    border: none;
+
+
+}
+.btnreg{
+    float: left;
+    background-color:#e1e1e1;
+    height: 100%;
+    width: 50%;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    color: #ffffff;
+    border: none;
+
+}
+
+.subpanel{
+   
+    width: 100%;
+    height: 100px;
+    bottom: 0;
+    margin-bottom: auto;
+    background-color: #ffffff;
+
+    
+
+
+}
+
+
+.btnfb{
+
+    float: top;
+    float: right;
+    background-color: #3064A0;
+    height: 50%;
+    width: 75%;
+    font-family: 'Times New Roman', Times, serif;
+    color: #ffffff;
+    border: none;
+    text-align: left;
+    padding-left: 20px;
+  
+   
+}
+
+.logofb{
+
+    float: top;
+    float: left;
+    background-color: #3064A0;
+    height: 50%;
+    width: 25%;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 24px;
+    font-weight: bold;
+    color: #ffffff;
+    border: none;
+  
+   
+}
+
+
+
+
+.btngoo{
+  
+    float: bottom;
+    float: right;
+    background-color: #C74A48;
+    height: 50%;
+    width: 75%;
+    font-family: 'Times New Roman', Times, serif;
+    color: #ffffff;
+    border: none;
+    text-align: left;
+    padding-left: 20px;
+  
+}
+
+
+
+.logogoo{
+  
+    float: bottom;
+    float: left;
+    background-color: #C74A48;
+    height: 50%;
+    width: 25%;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 24px;
+    font-weight: bold;
+    color: #ffffff;
+    border: none;
+  
+}
+
+
+.form{
+    width: 100%;
+    margin: 20px;
+}
+
+.inputblock{
+    width: 360px;
+    height: 75px;
+    bottom: 0;
+    padding-bottom: 20px;
+    background-color: #ffffff;
+}
+
+.inputfield{
+    float: bottom;
+    width: 100%;
+    height: 50px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom-style: solid;
+    border-bottom-color: #e1e1e1;
+
+}
+
+
+
+.submitblock{
+    width: 360px;
+    height: 50px;
+    bottom: 0;
+  
+    background-color: #ffffff;
+}
+
+.forgotbtn{
+    float: left;
+    background-color:#ffffff;
+    height: 100%;
+    width: 60%;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    text-align: left;
+    color: #ABBCC4;
+    border: none;
+}
+
+.submitbtn{
+    float: right;
+    background-color:#4AA270;
+    height: 100%;
+    width: 40%;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    color: #ffffff;
+    border: none;
+
+}
+
+
+/* 
+select {
+    width: 178px;
+    height: 25px;
+    background-color: antiquewhite;
+}
+select:hover {
+    width: 178px;
+    height: 25px;
+    background-color: white;
+} */
+
+.menu {
+    top: 40px;
+    float: left;
+    position: fixed;
+}
+
+
+.menu a {
+    display: inline-block;
+    background-color: rgb(92, 116, 189);
+    width: 100px;
+    border-style: solid;
+    border-color:rgb(162, 197, 230);
+    border-width: 2px;
+    color: rgb(212, 171, 192);
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+Change the link color on hover
+.menu a:hover {
+    background-color:rgb(212, 171, 192);
+    color: rgb(92, 116, 189);
+}
+
+
+
+
+h1{
+    size: 28px;
+    font-weight: 500;
+    color: darkgreen;
+    line-height: 36px;
+}
+
+p2{ 
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    color:#000000;
+    
+}
+
+/* 
+button {
+    width: 80px;
+    height: 27px;
+    background-color:rgb(74, 93, 151);
+    font-style: oblique;
+    font-weight: bold;
+    color: antiquewhite;
+    margin-top:10px;
+    border: none;
+   
+}
+
+.button:hover {
+    width: 80px;
+    height: 27px;
+    background-color:rgb(148, 55, 83);
+    color: antiquewhite;
+    font-style: oblique;
+    font-style: oblique;
+    font-weight: bold;
+    margin-top:10px;
+    border: none;
+   
+}
+.input {
+    width: 173px;
+    height: 19px;
+    background-color: antiquewhite;
+
+}
+.input:hover {
+    width: 173px;
+    height: 19px;
+    background-color: white;
+
+}
+ */
+

@@ -5,7 +5,7 @@ require_once "functions.php";
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="stylenew.css">
     <title>
         <?php
         if(isUserLogged()) {

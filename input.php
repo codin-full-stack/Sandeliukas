@@ -2,7 +2,7 @@
 <!-- <div id="myP1"> -->
 <form method="post" enctype="multipart/form-data">
     Foto:<br>
-    <input type="file" name="img" /><br>
+    <input  type="file" name="img" /><br>
     Vardas: <br>
     <input class="input"type="text" required name="vardas" ><br>
     Pavardė: <br>
