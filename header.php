@@ -19,8 +19,12 @@ require_once "functions.php";
 </head>
 <body>
 <header>
+
+<?php include_once "menu.php";?>
+
 <?php
-include_once "menu.php";
+
+// include_once "menu.php";
 if(isUserLogged()) {
     
 
