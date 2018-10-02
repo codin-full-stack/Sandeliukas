@@ -1,9 +1,13 @@
 <?php include 'header.php'; ?>
 <div class="myP2">
 <form method="post" >
-  Straipsniai pagal data:
-  <input class="input" type="date" name="day" value="<?php echo date("Y-m-d");?>">
-  <button type="submit" class="button">Taip</button> 
+    <div class="inputblock">
+        <p2>Straipsniai pagal data: </p2>
+        <input class="inputfield" type="date" name="day" value="<?php echo date("Y-m-d");?>">
+    </div>
+    <div class="submitblockpost">
+        <button type="submit" class="submitbtnpost">Taip</button> 
+    </div>
 </form>
 <?php
 

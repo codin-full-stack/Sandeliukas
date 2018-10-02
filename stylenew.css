@@ -14,7 +14,7 @@ body {
     top: 0;
     width: 100%;
     height: 30px;
-    background-color:rgb(190, 100, 127);
+    background-color:#C74A48;
     color: white;
     padding-top: 5px; 
     padding-bottom: 5px;
@@ -28,25 +28,62 @@ body {
     left: 0;
     bottom: 0;
     width: 100%;
-    background-color:rgb(190, 100, 127);
+    background-color:#C74A48;
     color: white;
     padding-top: 5px;
     text-align: center;
 }
 
 table {
-    border: 2px solid rgb(99, 54, 4);
+    border: none;
    
     
 }
 
 td, th {
-    border: 1px solid rgb(99, 54, 4);
+    border: 1px solid #000000;
     
     padding: 5px;
     text-align: left;
     vertical-align: top;
 } 
+
+.myP2{
+
+    min-height: 850px;
+    width: 800px;
+    background-color: #ffffff;
+    padding-top: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 50px;
+    text-align: left;
+    font-size: 17.5px;
+    line-height: 24px;
+    color: #000000;
+    left:0;
+    margin-left: auto;
+    right:0;
+    margin-right: auto;
+}
+.myP3{
+
+    min-height: 850px;
+    width: 800px;
+    background-color: #ffffff;
+    padding-top: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 50px;
+    text-align: left;
+    font-size: 17.5px;
+    line-height: 24px;
+    color: #000000;
+    left:0;
+    margin-left: auto;
+    right:0;
+    margin-right: auto;
+}
 
 
 
@@ -65,10 +102,10 @@ td, th {
     width: 400px;
     height: 50px;
     top: 0;
-    background-color: #ffffff;
+    background-color: #e1e1e1;
 
 }
-.btnlog{
+.btndefno{
     float: left;
     background-color:#ffffff;
     height: 100%;
@@ -80,7 +117,7 @@ td, th {
 
 
 }
-.btnreg{
+.btndef{
     float: left;
     background-color:#e1e1e1;
     height: 100%;
@@ -98,7 +135,7 @@ td, th {
     height: 100px;
     bottom: 0;
     margin-bottom: auto;
-    background-color: #ffffff;
+    background-color: #C74A48;
 
     
 
@@ -196,8 +233,148 @@ td, th {
     border-right: none;
     border-bottom-style: solid;
     border-bottom-color: #e1e1e1;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;  
+    font-weight: normal;  
+    color:#000000;
+    background-color: #ffffff;
+    
 
 }
+
+.inputfield:hover{
+    float: bottom;
+    width: 100%;
+    height: 50px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom-style: solid;
+    border-bottom-color: #e1e1e1;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;    
+    font-weight: normal;  
+    color:#000000;
+    background-color: #e1e1e1;
+    
+
+}
+
+.inputblockh{
+    width: 700px;
+    height: 75px;
+    bottom: 0;
+    padding-bottom: 20px;
+    background-color: #ffffff;
+}
+
+.inputfieldh{
+    float: bottom;
+    width: 100%;
+    height: 50px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom-style: solid;
+    border-bottom-color: #e1e1e1;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;  
+    font-weight: normal;  
+    color:#000000;
+    background-color: #ffffff;
+    
+
+}
+
+.inputfieldh:hover{
+    float: bottom;
+    width: 100%;
+    height: 50px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom-style: solid;
+    border-bottom-color: #e1e1e1;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;    
+    font-weight: normal;  
+    color:#000000;
+    background-color: #e1e1e1;
+    
+
+}
+
+.inputfieldp{
+    float: bottom;
+    width: 100%;
+    height: 300px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom-style: solid;
+    border-bottom-color: #e1e1e1;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;  
+    font-weight: normal;  
+    color:#000000;
+    background-color: #ffffff;
+    
+
+}
+
+.inputfieldp:hover{
+    float: bottom;
+    width: 100%;
+    height: 300px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom-style: solid;
+    border-bottom-color: #e1e1e1;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;    
+    font-weight: normal;  
+    color:#000000;
+    background-color: #e1e1e1;
+    
+
+}
+.inputfieldc{
+    float: bottom;
+    width: 100%;
+    height: 150px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom-style: solid;
+    border-bottom-color: #e1e1e1;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;  
+    font-weight: normal;  
+    color:#000000;
+    background-color: #ffffff;
+    
+
+}
+
+.inputfieldc:hover{
+    float: bottom;
+    width: 100%;
+    height: 150px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom-style: solid;
+    border-bottom-color: #e1e1e1;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;    
+    font-weight: normal;  
+    color:#000000;
+    background-color: #e1e1e1;
+    
+
+}
+
 
 
 
@@ -208,6 +385,7 @@ td, th {
   
     background-color: #ffffff;
 }
+
 
 .forgotbtn{
     float: left;
@@ -232,6 +410,110 @@ td, th {
 
 }
 
+.submitbtn:hover{
+    float: right;
+    background-color:#3064A0;
+    height: 100%;
+    width: 40%;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    color: #ffffff;
+    border: none;
+
+}
+
+.submitblockpost{
+    width: 144px;
+    height: 50px;
+    bottom: 0;
+  
+    background-color: #ffffff;
+}
+
+.submitbtnpost{
+    
+    background-color:#4AA270;
+    height: 100%;
+    width: 100%;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    color: #ffffff;
+    border: none;
+
+}
+
+.submitbtnpost:hover{
+    
+    background-color:#3064A0;
+    height: 100%;
+    width: 100%;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    color: #ffffff;
+    border: none;
+
+}
+
+
+
+label.cabinet {
+
+    width: 360px;
+    height: 50px;
+    background: #e1e1e1;
+    display: block;
+    overflow: hidden;
+    cursor: pointer;
+  
+}
+
+ 
+
+
+label.cabinet input.file {
+    position: relative;
+    width: 360px;
+    height: 50px;
+    opacity: 0;
+    -moz-opacity: 0;
+ 
+    filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0);
+    
+}
+
+.inputblockpost{
+    width: 144px;
+    height: 75px;
+    bottom: 0;
+    padding-bottom: 20px;
+    background-color: #ffffff;
+}  
+
+label.cabinetpost {
+
+    width: 144px;
+    height: 50px;
+    background: #e1e1e1;
+    display: block;
+    overflow: hidden;
+    cursor: pointer;
+  
+}
+
+ 
+  
+
+label.cabinetpost input.filepost {
+    position: relative;
+    width: 144px;
+    height: 50px;
+    opacity: 0;
+    -moz-opacity: 0;
+ 
+    filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0);
+    
+}
+
 
 /* 
 select {
@@ -254,20 +536,29 @@ select:hover {
 
 .menu a {
     display: inline-block;
-    background-color: rgb(92, 116, 189);
+    background-color:#4AA270;
     width: 100px;
     border-style: solid;
-    border-color:rgb(162, 197, 230);
+    border-color:#ffffff;
     border-width: 2px;
-    color: rgb(212, 171, 192);
+    color: #C74A48;
     padding: 8px 16px;
     text-decoration: none;
+    font-weight: bold;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
 }
 
-Change the link color on hover
+
+
+
 .menu a:hover {
-    background-color:rgb(212, 171, 192);
-    color: rgb(92, 116, 189);
+    background-color:#C74A48;
+    color:#4AA270;
+    border-color:#ffffff;
+    font-weight: bold;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
 }
 
 

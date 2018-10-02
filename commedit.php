@@ -16,11 +16,11 @@ if($result = mysqli_query($conn, $sql)){
         ?>
         <form action="commeditfin.php?commentid=<?php echo $row['commentid'] ?>&&hintid=<?php echo $row['hintid'] ?>" method="post" enctype="multipart/form-data">
                    
-            Komentaras: <br>           
-            <textarea rows="10" name="comment" id="comment" cols="111" required><?php echo $row['comment'] ?></textarea><br>           
-            <br>
-            <button type="submit" class="button">Taip</button>       
-            
+            <p2>Komentaras: </p2><br>           
+            <textarea rows="10" name="comment" id="comment" cols="111" class="inputfieldc" required><?php echo $row['comment'] ?></textarea><br>           
+            <div class="submitblockpost">
+            <button type="submit" class="submitbtnpost">Taip</button>       
+            </div>
         </form>
         <?php
 

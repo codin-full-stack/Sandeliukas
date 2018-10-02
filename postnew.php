@@ -6,19 +6,23 @@
 
         ?>
         <form action="postnewfin.php" method="post" enctype="multipart/form-data">
-            
-            Antraštė: <br>
-            <input class="input" type="text" style="width:800px;height:50px;" required name="title" value="" ><br>
-            Tekstas: <br>
-            <textarea rows="30" name="content" id="content" cols="111"></textarea><br>
-            Foto:<br>
-            <input type="file" name="img" /><br>
-            <?php echo $_SESSION['name'].' '.$_SESSION['surname'];?>
-            <br>
-            <?php echo date("Y-m-d");?>
-            <br>
-            <button type="submit" class="button">Taip</button>       
-            
+            <div class="inputblockh"> 
+            <p2>Antraštė: </p2><br>
+            <input class="inputfieldh" type="text" style="width:800px;height:50px;" required name="title" value="" ><br>
+            </div>
+            <p2>Tekstas: </p2><br>
+            <textarea rows="30" name="content" id="content" cols="111" class="inputfieldp"></textarea><br>
+            <div class="inputblockpost">
+            <p2>Pasirinkti foto: </p2><br>
+                <label class="cabinetpost">
+                <input type="file" name="img" class="filepost" /><br>
+                </label>
+            </div>
+            <p2><?php echo $_SESSION['name'].' '.$_SESSION['surname'];?></p2><br>
+            <p2><?php echo date("Y-m-d");?></p2><br>
+            <div class="submitblockpost">
+                <button type="submit" class="submitbtnpost">Taip</button>       
+            </div>
         </form>
         <?php
 

@@ -15,19 +15,24 @@ if($result = mysqli_query($conn, $sql)){
 
         ?>
         <form action="posteditfin.php?postid=<?php echo $row['postid'] ?>" method="post" enctype="multipart/form-data">
-            
-            Antraštė: <br>
-            <input class="input" type="text" style="width:800px;height:50px;" required readonly name="title" value="<?php echo $row['title'] ?>" required><br>
-            Tekstas: <br>
+                
+            <div class="inputblockh"> 
+            <p2>Antraštė: </p2><br>
+            <input class="inputfieldh" type="text" style="width:800px;height:50px;" required readonly name="title" value="<?php echo $row['title'] ?>" required><br>
+            </div>
+            <p2>Tekstas: </p2><br>
            
-            <textarea rows="30" name="content" id="content" cols="111" required><?php echo $row['content'] ?></textarea><br>
-            Foto:<br>
-                    <input type="file" name="img" src="<?php echo $row['postimg'] ?>"/><br>
-                    <input type="hidden" name="existing_image" value="<?php echo $row['postimg'] ?>">
-           
-            <br>
-            <button type="submit" class="button">Taip</button>       
-            
+            <textarea rows="30" name="content" id="content" cols="111" class="inputfieldp" required><?php echo $row['content'] ?></textarea><br>
+            <div class="inputblockpost">
+            <p2>Pasirinkti foto: </p2><br>
+                <label class="cabinetpost">
+                <input type="file" name="img" class="filepost" src="<?php echo $row['postimg'] ?>"/><br>
+                <label >              
+            </div>
+                <input type="hidden" name="existing_image" value="<?php echo $row['postimg'] ?>"> 
+            <div class="submitblockpost">
+                <button type="submit" class="submitbtnpost">Taip</button>       
+            </div>
         </form>
         <?php
 

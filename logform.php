@@ -2,8 +2,8 @@
 <body>
     <div  class="panel">
         <div class="btnpanel">
-            <button class="btnlog" type="submit" name="submit">Login</button>  
-            <button class="btnreg" type="submit" name="submit">Register</button> 
+            <button class="btndefno" type="submit" name="submit" onclick="window.location.href='logform.php'">Login</button>  
+            <button class="btndef" type="submit" name="submit" onclick="window.location.href='reg.php'">Register</button> 
         </div>
 
         <div  class="form">
@@ -23,8 +23,8 @@
                
             </div>
             <div class="submitblock">
-            <button class="forgotbtn" type="submit" name="submit">Forgot password?</button>  
-            <button class="submitbtn" type="submit" name="submit">Signin</button>  
+                <button class="forgotbtn" type="submit" name="submit">Forgot password?</button>  
+                <button class="submitbtn" type="submit" name="submit">Signin</button>  
             </div>
         </form>
         </div>

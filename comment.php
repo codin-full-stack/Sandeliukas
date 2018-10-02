@@ -21,11 +21,11 @@ if($result = mysqli_query($conn, $sql)){
         ?>
 
         <form action="commentfin.php?postid=<?php echo $row['postid'] ?>" method="post" enctype="multipart/form-data">
-                                    
-            <textarea rows="10" name="comment" id="comment" cols="111" required></textarea><br>
-           
-            <button type="submit" class="button">Skelbti</button>   
-              
+            <p2>Komentuoti: </p2>                      
+            <textarea rows="10" name="comment" id="comment" cols="111" class="inputfieldc" required></textarea><br>
+            <div class="submitblockpost">
+            <button type="submit" class="submitbtnpost">Skelbti</button>   
+            </div>  
             
         </form>
         <?php
