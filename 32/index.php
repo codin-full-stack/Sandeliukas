@@ -14,17 +14,15 @@ ORDER BY hint.time DESC";
             while($row = mysqli_fetch_array($result)){ 
             ?>
             <div class="box">
+                <?php if (!empty($row['postimg'])){  ?>
+                    <div class="box-image-container" style="background-image: url(<?php echo $row['postimg']; ?>);"></div>   
+                <?php } ?>
                 
-                <div class="box-image-container">
-                    <?php if (!empty($row['postimg'])){
-                            echo "<img src=". $row['postimg'] ." class='box-image' alt=\"\"  />";      
-                            }    
-                    ?>
-                </div>
                 <div class="box-title">
-                    <h2 class="box-heading">
+                    <div class="box-heading">
                     <?php echo $row['title'];?>
-                    </h2>
+                    <?php echo "<p2><br><a style='color:lightblue' href='post.php?postid=".$row['postid']."'>Skaityti straipsnį >>></a></p2>"; ?>
+                    </div>
                 </div>
             
             </div>
