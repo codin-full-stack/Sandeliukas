@@ -18,7 +18,7 @@ if($result = mysqli_query($conn, $sql)){
                 
             <div class="inputblockh"> 
             <p2>Antraštė: </p2><br>
-            <input class="inputfieldh" type="text" style="width:800px;height:50px;" required readonly name="title" value="<?php echo $row['title'] ?>" required><br>
+            <input class="inputfieldh" type="text"  required readonly name="title" value="<?php echo $row['title'] ?>" required><br>
             </div>
             <p2>Tekstas: </p2><br>
            

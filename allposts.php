@@ -29,7 +29,7 @@ if($result = mysqli_query($conn, $sql)){
                     echo "<h1>". $row['title']."</h1>";               
                     echo $row['content'] . "<br><br>";  
                     if (!empty($row['postimg'])){
-                        echo "<img src=". $row['postimg'] ." alt=\"\"  width='800'  /><br><br>";      
+                        echo "<img src=". $row['postimg'] ." alt=\"\"  width='100%'  /><br><br>";      
                         }     
                     if (!empty($row['photo'])){
                         echo "<img src=". $row['photo'] ." alt=\"\"  width='50'  /><br>";      
@@ -42,7 +42,7 @@ if($result = mysqli_query($conn, $sql)){
                     echo "<h1>". $row['title']."</h1>";               
                     echo $row['content'] . "<br><br>"; 
                     if (!empty($row['postimg'])){
-                        echo "<img src=". $row['postimg'] ." alt=\"\"  width='800'  /><br><br>";      
+                        echo "<img src=". $row['postimg'] ." alt=\"\"  width='100%'  /><br><br>";      
                         }     
                     if (!empty($row['photo'])){
                         echo "<img src=". $row['photo'] ." alt=\"\"  width='50'  /><br>";      
@@ -61,7 +61,7 @@ if($result = mysqli_query($conn, $sql)){
                     echo "<h1>". $row['title']."</h1>";               
                     echo $row['content'] . "<br><br>";   
                     if (!empty($row['postimg'])){
-                        echo "<img src=". $row['postimg'] ." alt=\"\"  width='800'  /><br><br>";      
+                        echo "<img src=". $row['postimg'] ." alt=\"\"  width='100%'  /><br><br>";      
                         }     
                     if (!empty($row['photo'])){
                         echo "<img src=". $row['photo'] ." alt=\"\"  width='50'  /><br>";      
@@ -74,7 +74,7 @@ if($result = mysqli_query($conn, $sql)){
                     echo "<h1>". $row['title']."</h1>";               
                     echo $row['content'] . "<br><br>";  
                     if (!empty($row['postimg'])){
-                        echo "<img src=". $row['postimg'] ." alt=\"\"  width='800'  /><br><br>";      
+                        echo "<img src=". $row['postimg'] ." alt=\"\"  width='100%'  /><br><br>";      
                         }    
                     if (!empty($row['photo'])){
                         echo "<img src=". $row['photo'] ." alt=\"\"  width='50'  /><br>";      

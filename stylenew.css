@@ -1,10 +1,11 @@
 body {
-
+   
     background-color:#D3EFBD;
     font-size: 18;
     color:#000000;
     margin-top: 40px;
     margin-bottom: 40px;
+    align-items: center;
     
     
 }
@@ -39,6 +40,7 @@ body {
 }
 
 table {
+    width: 100%;
     border: none;
    
     
@@ -54,7 +56,8 @@ td, th {
 .myP2{
 
     min-height: 850px;
-    width: 800px;
+    max-width: 700px;
+    width: 100%;
     background-color: #E0E2DB;
     padding-top: 50px;
     padding-left: 50px;
@@ -72,7 +75,8 @@ td, th {
 .myP3{
 
     min-height: 850px;
-    width: 800px;
+    max-width: 700px;
+    width: 100%;
     background-color: #E0E2DB;
     padding-top: 50px;
     padding-left: 50px;
@@ -92,20 +96,19 @@ td, th {
 
 .panel {
     height: auto;
-    width: 400px;
+    max-width: 400px;
+    width: 100%;
     background-color: #E0E2DB;
     border-top-style: solid;
     border-top-color: rgb(144, 173, 122);
     margin-top: 60px;
     margin-bottom: 60px;
-    left:0;
     margin-left: auto;
-    right:0;
     margin-right: auto;
     
 }
 .btnpanel{
-    width: 400px;
+    width: 100%;
     height: 50px;
     top: 0;
     background-color: #D3EFBD;
@@ -220,15 +223,15 @@ td, th {
 
 
 .form{
-    width: 100%;
-    margin: 20px;
+    width: 90%;
+    margin: 5%;
 }
 
 .inputblock{
-    width: 360px;
-    height: 75px;
+    width: 100%;
+    height: 25%;
     bottom: 0;
-    padding-bottom: 20px;
+    padding-bottom: 5%;
     background-color: #E0E2DB;
 }
 
@@ -269,7 +272,7 @@ td, th {
 }
 
 .inputblockh{
-    width: 700px;
+    width: 100%;
     height: 75px;
     bottom: 0;
     padding-bottom: 20px;
@@ -387,7 +390,7 @@ td, th {
 
 
 .submitblock{
-    width: 360px;
+    width: 100%;
     height: 50px;
     bottom: 0;
   
@@ -466,7 +469,7 @@ td, th {
 
 label.cabinet {
 
-    width: 360px;
+    width: 100%;
     height: 50px;
     background: #D3EFBD;
     display: block;
@@ -480,7 +483,7 @@ label.cabinet {
 
 label.cabinet input.file {
     position: relative;
-    width: 360px;
+    width: 100%;
     height: 50px;
     opacity: 0;
     -moz-opacity: 0; 
@@ -499,7 +502,7 @@ label.cabinet input.file {
 
 label.cabinetpost {
 
-    width: 144px;
+    width: 100%;
     height: 50px;
     background: #D3EFBD;   
     display: block;
@@ -513,7 +516,7 @@ label.cabinetpost {
 
 label.cabinetpost input.filepost {
     position: relative;
-    width: 144px;
+    width: 100%;
     height: 50px;
     opacity: 0;
     -moz-opacity: 0; 
@@ -541,7 +544,7 @@ p2{
     
 }
 
-
+/* 
 .menu {
     top: 40px;
     float: left;
@@ -572,7 +575,7 @@ p2{
     background-color:#8B2635;
     color:#D3EFBD;
 
-}
+} */
 
 
 
@@ -584,7 +587,7 @@ p2{
     top: 0;
     background-color: #8B2635;
     color: white;
-    padding: 10px;
+    padding: 25%;
     font-size: 16px;
     border: none;
     transform: rotate(90deg);
@@ -601,18 +604,16 @@ p2{
 
 .dropdown-content {
     display: none;
-    position: absolute;
-    
-    background-color: #D2D4C8;
-   
-    min-width: 160px;
+    position: absolute;    
+    background-color: #D2D4C8;   
+    width: 400%;
     box-shadow: 0px 8px 20px 3px rgba(0,0,0,0.2);
     z-index: 1;
 }
 
 .dropdown-content a {
     color: #8B2635;
-    padding: 12px 16px;
+    padding: 10% 10%;
     text-decoration: none;
     display: block;
 }
@@ -634,13 +635,13 @@ p2{
 
 .container {
     display: flex; /* or inline-flex */   
-    width: 1260px;
+    max-width: 1280px;
     background-color: #E0E2DB;
     margin-top: 40px;
     margin-bottom: 60px;
     margin-right: auto;
     margin-left: auto;
-    padding: 20px;
+    padding: 2%;
     flex-wrap: wrap;
     justify-content:space-around;
     
@@ -652,14 +653,14 @@ p2{
     overflow: hidden;
     height: 440px;
     width: 270px;
-    margin: 20px;
+    margin: 2%;
     background-color: #E0E2DB;
     
    
 }
 
 .box:nth-child(4n-3) {
-    width: 570px;
+    width: 560px;
 }
 
 .box-image-container {
@@ -683,10 +684,10 @@ p2{
 
 .box-title{
     position: absolute;
-    min-width: 240px;
+    min-width: 89%;
     bottom: 0;
     background-image:linear-gradient(#ffffff00,#41414180, #202020);
-    padding: 15px;
+    padding: 11%;
     
    
 
@@ -699,3 +700,83 @@ display:block;
 font-size:24px;
 font-weight:700;
 }
+
+
+[class*="col-"] {
+    float: left;
+    
+}
+
+/* For desktop: */
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+
+@media only screen and (max-width: 768px) {
+  
+    [class*="col-"] {
+        width: 100%;
+    }
+    .myP2{
+
+        min-height: 650px;
+        max-width: 650px;
+        padding-left: 10px;
+        padding-right: 10px;
+
+    }
+    .myP3{
+    
+        min-height: 650px;
+        max-width: 650px;
+        padding-left: 10px;
+        padding-right: 10px;
+
+    }
+    
+
+}
+
+
+
+@media only screen and (max-width: 375px) {
+
+    [class*="col-"] {
+        width: 100%;
+    }
+        
+
+    .myP2{
+
+        min-height: 550px;
+        max-width: 350px;
+        padding-left: 5px;
+        padding-right: 5px;
+    
+    }
+    .myP3{
+    
+        min-height: 550px;
+        max-width: 350px;
+        padding-left: 5px;
+        padding-right: 5px;
+  
+    
+
+
+
+
+
+}
+
+

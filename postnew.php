@@ -8,7 +8,7 @@
         <form action="postnewfin.php" method="post" enctype="multipart/form-data">
             <div class="inputblockh"> 
             <p2>Antraštė: </p2><br>
-            <input class="inputfieldh" type="text" style="width:800px;height:50px;" required name="title" value="" ><br>
+            <input class="inputfieldh" type="text"  required name="title" value="" ><br>
             </div>
             <p2>Tekstas: </p2><br>
             <textarea rows="30" name="content" id="content" cols="111" class="inputfieldp"></textarea><br>

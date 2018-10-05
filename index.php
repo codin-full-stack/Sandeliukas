@@ -5,9 +5,10 @@ FROM hint
 JOIN person_information ON hint.userid = person_information.id
 ORDER BY hint.time DESC";
 ?>
-        
-
+   
+   <div class="col-12"> 
     <div class="container">
+       
     <?php 
     if($result = mysqli_query($conn, $sql)){
         if(mysqli_num_rows($result) > 0){ 
@@ -39,7 +40,7 @@ ORDER BY hint.time DESC";
         echo "ERROR: Could not able to execute $sql. " . mysqli_error($conn);
     }
     ?>
-
+    </div>
     </div>        
 
 
