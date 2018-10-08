@@ -1,5 +1,6 @@
 <?php include 'header.php'; ?>
 <div class="myP2">
+<div class="box-user">
 <form method="post" >
     <div class="inputblock">
         <p2>Straipsniai pagal data: </p2>
@@ -9,6 +10,8 @@
         <button type="submit" class="submitbtnpost">Taip</button> 
     </div>
 </form>
+<br>
+
 <?php
 
 
@@ -22,12 +25,25 @@ if($result = mysqli_query($conn, $sql)){
 
         if ( (isUserLogged()) ){
         
-            echo "<br><a href='postnew.php?userid=".$_SESSION['id']."'>Naujas straipsnis >>></a><br><br>";  	
+            echo "<br><a href='postnew.php?userid=".$_SESSION['id']."'>Naujas straipsnis >>></a><br><br>"; 
+            ?></div><?php 	
 
-            while($row = mysqli_fetch_array($result)){       
-                if ( (isset($_POST['day']))and(($_POST['day'])==($row['date'])) ){                                   
-                    echo "<h1>". $row['title']."</h1>";               
+            while($row = mysqli_fetch_array($result)){ 
+     
+                if ( (isset($_POST['day']))and(($_POST['day'])==($row['date'])) ){   
+                    ?>
+                    <div class="box-user">
+                    <?php                                 
+                    echo "<br><h1>". $row['title']."</h1>";               
+                    ?>
+                    <div class="box-post">
+                    <?php             
                     echo $row['content'] . "<br><br>";  
+                    
+                    ?>
+                    </div>
+                    <?php  
+                    echo "<a href='post.php?postid=".$row['postid']."'>Skaityti straipsnį >>></a><br><br>";
                     if (!empty($row['postimg'])){
                         echo "<img src=". $row['postimg'] ." alt=\"\"  width='100%'  /><br><br>";      
                         }     
@@ -36,11 +52,25 @@ if($result = mysqli_query($conn, $sql)){
                         }        
                     echo $row['name'] ."  ". $row['surname'] . "<br>";               
                     echo $row['date'] . "<br>";
-                    echo "<a href='post.php?postid=".$row['postid']."'>Skaityti straipsnį >>></a><br><br><br>";     
+                  
+                    ?>
+                    </div>
+                    <?php         
                 }  
                 elseif (!isset($_POST['day'] )){
-                    echo "<h1>". $row['title']."</h1>";               
-                    echo $row['content'] . "<br><br>"; 
+                    ?>
+                    <div class="box-user">
+                    <?php 
+                    echo "<br><h1>". $row['title']."</h1>";               
+                    ?>
+                    <div class="box-post">
+                    <?php             
+                    echo $row['content'] . "<br><br>";  
+                    
+                    ?>
+                    </div>
+                    <?php  
+                    echo "<a href='post.php?postid=".$row['postid']."'>Skaityti straipsnį >>></a><br><br>";  
                     if (!empty($row['postimg'])){
                         echo "<img src=". $row['postimg'] ." alt=\"\"  width='100%'  /><br><br>";      
                         }     
@@ -49,17 +79,34 @@ if($result = mysqli_query($conn, $sql)){
                     }
                     echo $row['name'] ."  ". $row['surname'] . "<br>";               
                     echo $row['date'] . "<br>";
-                    echo "<a href='post.php?postid=".$row['postid']."'>Skaityti straipsnį >>></a><br><br><br>";  
 
-                }         
+                    ?>
+                    </div>
+                    <?php    
+
+                }    
+  
             }
 
         }
         else {
+            ?></div><?php 	
             while($row = mysqli_fetch_array($result)){	
-                if ( (isset($_POST['day']))and(($_POST['day'])==($row['date'])) ){                    
-                    echo "<h1>". $row['title']."</h1>";               
-                    echo $row['content'] . "<br><br>";   
+
+                if ( (isset($_POST['day']))and(($_POST['day'])==($row['date'])) ){     
+                    ?>
+                    <div class="box-user">
+                    <?php               
+                    echo "<br><h1>". $row['title']."</h1>";  
+                    ?>
+                    <div class="box-post">
+                    <?php             
+                    echo $row['content'] . "<br><br>";  
+                    
+                    ?>
+                    </div>
+                    <?php 
+                    echo "<a href='post.php?postid=".$row['postid']."'>Skaityti straipsnį >>></a><br><br>";    
                     if (!empty($row['postimg'])){
                         echo "<img src=". $row['postimg'] ." alt=\"\"  width='100%'  /><br><br>";      
                         }     
@@ -68,11 +115,24 @@ if($result = mysqli_query($conn, $sql)){
                         }       
                     echo $row['name'] ."  ". $row['surname'] . "<br>";               
                     echo $row['date'] . "<br>";
-                    echo "<a href='post.php?postid=".$row['postid']."'>Skaityti straipsnį >>></a><br><br><br>";   
+
+                    ?>
+                    </div>
+                    <?php   
                     }
                 elseif (!isset($_POST['day'] )){
-                    echo "<h1>". $row['title']."</h1>";               
+                    ?>
+                    <div class="box-user">
+                    <?php
+                    echo "<br><h1>". $row['title']."</h1>";               
+                    ?>
+                    <div class="box-post">
+                    <?php             
                     echo $row['content'] . "<br><br>";  
+                    ?>
+                    </div>
+                    <?php   
+                    echo "<a href='post.php?postid=".$row['postid']."'>Skaityti straipsnį >>></a><br><br>"; 
                     if (!empty($row['postimg'])){
                         echo "<img src=". $row['postimg'] ." alt=\"\"  width='100%'  /><br><br>";      
                         }    
@@ -81,8 +141,12 @@ if($result = mysqli_query($conn, $sql)){
                         }         
                     echo $row['name'] ."  ". $row['surname'] . "<br>";               
                     echo $row['date'] . "<br>";
-                    echo "<a href='post.php?postid=".$row['postid']."'>Skaityti straipsnį >>></a><br><br><br>"; 
+
+                    ?>
+                    </div>
+                    <?php 
                 }
+
             }
 
         }
