@@ -11,11 +11,17 @@ if($result = mysqli_query($conn, $sql)){
     if(mysqli_num_rows($result) > 0){
                          
         $row = mysqli_fetch_assoc($result);
+        ?>
+        <div class="box-user">
+        <?php         
 
         echo "<h1>". $row['title'] . "</h1><br><br>";                
                 echo  $row['content'] . "<br><br>";           
                 echo  $row['name'] .' '.$row['surname'] . "<br>";               
                 echo  $row['date'] . "<br><br>";  
+        ?>
+        </div>
+        <?php         
 
         if(isUserLogged()) {
         ?>
@@ -53,32 +59,43 @@ $sql2 = "SELECT comments.commentid, comments.hintid, comments.comment, comments.
             if($result2 = mysqli_query($conn, $sql2)){
                 if(mysqli_num_rows($result2) > 0){
                     echo "<br>";
-                    echo "<table>";
+                    // echo "<table>";
                       
                     while($row2 = mysqli_fetch_array($result2)){  
                         if ((isUserLogged())  and ($_SESSION['id']==$row2['usrid'])){
-                    
-                            echo "<tr>";
-                            echo "<td>";                    
+                            ?>
+                            <div class="box-user">
+                            <?php                    
+                            // echo "<tr>";
+                            // echo "<td>";                    
                             echo  $row2['comment'] . "<br>";           
                             echo  $row2['name'] .' '.$row2['surname'] . "<br>";               
-                            echo  $row2['commtime'] . "<br>";  
+                            echo  $row2['commtime'] . "<br><br>";  
                             echo "<a href='commedit.php?commentid=".$row2['commentid']."'>Redaguoti komentarą</a><br>";
-                            echo "<a href='commdelete.php?commentid=".$row2['commentid']."'>Naikinti komentarą</a><br>";
-                            echo "</tr>";
-                            echo "</td>";
+                            echo "<a href='commdelete.php?commentid=".$row2['commentid']."'>Naikinti komentarą</a><br><br>";
+                            // echo "</tr>";
+                            // echo "</td>";
+                            ?>
+                            </div>
+                            <?php 
                         }
                         else {
-                            echo "<tr>";
-                            echo "<td>";                    
+                            ?>
+                            <div class="box-user">
+                            <?php
+                            // echo "<tr>";
+                            // echo "<td>";                    
                             echo  $row2['comment'] . "<br>";           
                             echo  $row2['name'] .' '.$row2['surname'] . "<br>";               
-                            echo  $row2['commtime'] . "<br>";  
-                            echo "</tr>";
-                            echo "</td>";
+                            echo  $row2['commtime'] . "<br><br>";  
+                            // echo "</tr>";
+                            // echo "</td>";
+                            ?>
+                            </div>
+                            <?php 
                         }
                     }
-                    echo "</table>"; 
+                    // echo "</table>"; 
                 }       
                       
                 mysqli_free_result($result2);

@@ -49,8 +49,7 @@ if(mysqli_query($conn, $sql)){
 $_SESSION['name']=$_POST['vardas'];
 $_SESSION['surname']=$_POST['pavarde'];
                          
-echo "Duomenys atnaujinti";   
-echo "<br><br><a href='admin.php'>Profilis</a><br>";
+header("Location:admin.php");
 
 ?>
 <?php

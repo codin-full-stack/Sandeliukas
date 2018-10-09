@@ -483,6 +483,9 @@ label.cabinet {
   
 }
 
+label.cabinet:hover{
+    background-color:rgb(144, 173, 122);
+}
  
 
 
@@ -490,7 +493,7 @@ label.cabinet input.file {
     position: relative;
     width: 100%;
     height: 50px;
-    opacity: 0;
+    opacity:0;
     -moz-opacity: 0; 
     filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0);
     
@@ -515,7 +518,9 @@ label.cabinetpost {
     cursor: pointer;
   
 }
-
+label.cabinetpost:hover {
+    background-color:rgb(144, 173, 122);
+}
  
   
 
@@ -658,7 +663,7 @@ p2{
     /* border-radius: 10px; */
     overflow: hidden;
     height: 440px;
-    width: 270px;
+    width: 290px;
     margin: 15px;
     background-color: #E0E2DB;
     
@@ -666,7 +671,7 @@ p2{
 }
 
 .box:nth-child(4n-3) {
-    width: 560px;
+    width: 580px;
 }
 
 .box-image-container {
@@ -690,9 +695,9 @@ p2{
 
 .box-title{
     position: absolute;
-    min-width: 89%;
+    width: 100%;
     bottom: 0;
-    background-image:linear-gradient(#34412b00,#34412bcb, #34412b);
+    background-image:linear-gradient(#212b1a00,#212b1acb, #212b1a);
     padding: 15px;
     
    
@@ -701,11 +706,70 @@ p2{
 
 .box-heading{
     height: 100%;
+    width: 90%;
     color: #ffffff;
     display:block;
     font-size:28px;
     font-weight:500;
 }
+
+
+
+.box_data {
+    position: relative;
+    /* border-radius: 10px; */
+    overflow: hidden;
+    height: 300px;
+    width: 200px;
+    margin: 15px;
+    background-color: #E0E2DB;
+    
+   
+}
+
+
+
+.box-image-container_data {
+    background-color: #E0E2DB;
+    height: 200px;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    
+
+}
+
+
+/* .box-image {
+   
+    display:block;
+    max-width: 190%;
+    max-height: 140%;
+
+} */
+
+
+.box-title_data{
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    background-image:linear-gradient(#212b1a00,#212b1acb, #212b1a);
+    padding: 10px;
+    
+   
+
+}
+
+.box-heading_data{
+    height: 100%;
+    color: #ffffff;
+    display:block;
+    font-size:16px;
+    font-weight:200;
+}
+
+
+
 
 
 .containerpost {
@@ -754,6 +818,7 @@ p2{
     font-family:Verdana, Geneva, Tahoma, sans-serif;    
     font-size: 16px;
     color: #202020;
+  
 
 }
 
@@ -855,8 +920,17 @@ p2{
         font-weight: 300;
         line-height: 36px;
     }
+
+    
     
 
 }
+
+
+
+
+
+
+
 
 

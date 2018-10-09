@@ -15,6 +15,7 @@
             <div class="inputblockpost">
             <p2>Pasirinkti foto: </p2><br>
                 <label class="cabinetpost">
+                   
                 <input type="file" name="img" class="filepost" /><br>
                 </label>
             </div>

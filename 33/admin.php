@@ -11,12 +11,14 @@ include "header.php";?>
             if(mysqli_num_rows($result) > 0){
                 
                
-                echo "<table>";
+                // echo "<table>";
             
                 while($row = mysqli_fetch_assoc($result)){
-                    
-                    echo "<tr>";
-                        echo "<td>";
+                    ?>
+                    <div class="box-user">
+                    <?php
+                    // echo "<tr>";
+                    //     echo "<td>";
                         echo "Vardas: " . $row['name'] . "<br>";
                         echo "Pavardė: " . $row['surname'] . "<br>";
                         if(! empty($row['city'])) {
@@ -29,18 +31,20 @@ include "header.php";?>
                         echo "Amžius: " . $row['age'] . "<br>";
                         echo "Telefonas: " . $row['phone'] . "<br>";
                         echo "El.Paštas: " . $row['mail'] . "<br>";
-                        echo "Foto: " . $row['photo'] . "<br>";
+                        echo "<br>";
                         echo "<img src=". $row['photo'] ." alt=\"\" width='200'  />";
                        
                         echo "<br><br><a href='editall.php'>Keisti duomenis</a><br>";
                         echo "<a href='editform.php'>Keisti slaptažodį</a><br>";
-                        echo "<a href='delete.php'>Naikinti profilį</a><br>";
-                        echo "</td>";
-                    echo "</tr>";
-                    
+                        echo "<a href='delete.php'>Naikinti profilį</a><br><br>";
+                    //     echo "</td>";
+                    // echo "</tr>";
+                    ?>
+                    </div>
+                    <?php 
                  
                 }
-                echo "</table>";
+                // echo "</table>";
             
                 // Free result set
                 mysqli_free_result($result);
@@ -65,17 +69,24 @@ include "header.php";?>
         if($result = mysqli_query($conn, $sql)){
             if(mysqli_num_rows($result) > 0){
 
-              
-                    echo "<br><br>".$name." straipsniai:"."<br>";
+                    ?>
+                    <div class="box-user">
+                    <?php
+                    echo "<br>".$name." straipsniai:"."<br>";
                     echo "<a href='postnew.php?userid=".$_SESSION['id']."'>Naujas straipsnis >>></a><br><br><br>";  
                     
-                    
+                    ?>
+                    </div>
+                    <?php 
 
                     while($row = mysqli_fetch_array($result)){	
-                       
+
                             
                         if ( ($_SESSION['id'])==($row['userid']) ){
-                            echo "<h1>". $row['title']."</h1>";               
+                            ?>
+                            <div class="box-user">
+                            <?php
+                            echo "<br><h1>". $row['title']."</h1>";               
                             echo $row['content'] . "<br><br>";     
                             if (!empty($row['postimg'])){
                                 echo "<img src=". $row['postimg'] ." alt=\"\"  width='100%'  /><br><br>";      
@@ -85,8 +96,12 @@ include "header.php";?>
                                 }          
                             echo $row['name'] ."  ". $row['surname'] . "<br>";               
                             echo $row['date'] . "<br>";
-                            echo "<a href='post.php?postid=".$row['postid']."'>Skaityti straipsnį >>></a><br><br><br>";   
+                            echo "<a href='post.php?postid=".$row['postid']."'>Skaityti straipsnį >>></a><br><br>";   
+                            ?>
+                            </div>
+                            <?php 
                         }
+
                     }
                                 
                 

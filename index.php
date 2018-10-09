@@ -16,8 +16,9 @@ ORDER BY hint.time DESC";
                 
             ?>
             <div class="box">
-                <?php if (!empty($row['postimg'])){  ?>
-                    <div class="box-image-container" style="background-image: url(<?php echo $row['postimg']; ?>);"></div>   
+            <?php
+                 if (!empty($row['postimg'])){  ?>
+                <div class="box-image-container" style="background-image: url(<?php echo $row['postimg']; ?>);"></div>   
                 <?php } ?>
                 
                 <div class="box-title">

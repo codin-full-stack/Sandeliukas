@@ -12,13 +12,15 @@ if($result = mysqli_query($conn, $sql)){
        
         
         while($row = mysqli_fetch_assoc($result)){
-       
-    
+
 
             if (($row['name']==$_GET['name']) and ($row['surname']==$_GET['surname'])){
-                echo "<table>";
-                echo "<tr>";
-                echo "<td>";
+                ?>
+                <div class="box-user">
+                <?php    
+                // echo "<table>";
+                // echo "<tr>";
+                // echo "<td>";
                 echo "Vardas: " . $row['name'] . "<br>";
                 echo "Pavardė: " . $row['surname'] . "<br>";                       
                 if(! empty($row['city'])) {
@@ -31,15 +33,18 @@ if($result = mysqli_query($conn, $sql)){
                 echo "Telefonas: " . $row['phone'] . "<br>";                       
                 echo "El.Paštas: " . $row['mail'] . "<br>";
                 echo "Amžius: " . $row['age'] . "<br>";
-                echo "Foto: " . $row['photo'] . "<br>";   
-                echo "<img src=". $row['photo'] ." alt=\"\"  width='200'  />";                    
-               
-                
-                echo "</td>";
-                echo "</tr>";
-                echo "</table>";
+                echo "<br>";   
+                echo "<img src=". $row['photo'] ." alt=\"\"  width='200'  /><br><br>";   
+                ?>
+                </div>
+                <?php                 
+                               
+                // echo "</td>";
+                // echo "</tr>";
+                // echo "</table>";
             }
-          
+                                
+       
          
         }
         
@@ -66,9 +71,13 @@ if($result = mysqli_query($conn, $sql)){
         
         echo "<br><br>".$_GET['name'].' '.$_GET['surname']." straipsniai:"."<br>";
         while($row = mysqli_fetch_array($result)){	
+ 
                 
             if ((($_GET['name'])==($row['name']) )and ( ($_GET['surname'])==($row['surname']) )){
-                echo "<h1>". $row['title']."</h1>";               
+                ?>
+                <div class="box-user">
+                <?php   
+                echo "<br><h1>". $row['title']."</h1>";               
                 echo $row['content'] . "<br><br>";   
                 if (!empty($row['postimg'])){
                     echo "<img src=". $row['postimg'] ." alt=\"\"  width='100%'  /><br><br>";      
@@ -78,9 +87,13 @@ if($result = mysqli_query($conn, $sql)){
                     }                  
                 echo $row['name'] ."  ". $row['surname'] . "<br>";               
                 echo $row['date'] . "<br>";
-                echo "<a href='post.php?postid=".$row['postid']."'>Skaityti straipsnį >>></a><br><br><br>";   
+                echo "<a href='post.php?postid=".$row['postid']."'>Skaityti straipsnį >>></a><br><br>";   
+                ?>
+                </div>
+                <?php 
             }
-          
+                                
+         
         }
                
         

@@ -32,7 +32,7 @@ if(mysqli_query($conn, $sql)){
 } else{
     echo "ERROR: Could not able to execute $sql. " . mysqli_error($conn);
 }
-header("Location:index.php");
+header("Location:allposts.php");
  
 
 ?>
