@@ -149,7 +149,7 @@
             echo "Prisijungta: ".($_SESSION['name']).' '.$_SESSION['surname']."&nbsp;&nbsp;&nbsp;&nbsp;<a href='logout.php'>Atsijungti</a><br>";
         }
         else
-            echo "Neprisijungta<br><br>";
+            echo "Neprisijungta<br>";
     }
 
     function isUserLogged() {

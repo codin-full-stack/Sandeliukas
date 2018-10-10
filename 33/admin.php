@@ -32,8 +32,9 @@ include "header.php";?>
                         echo "Telefonas: " . $row['phone'] . "<br>";
                         echo "El.Paštas: " . $row['mail'] . "<br>";
                         echo "<br>";
+                        if (!empty($row['photo'])){
                         echo "<img src=". $row['photo'] ." alt=\"\" width='200'  />";
-                       
+                        }
                         echo "<br><br><a href='editall.php'>Keisti duomenis</a><br>";
                         echo "<a href='editform.php'>Keisti slaptažodį</a><br>";
                         echo "<a href='delete.php'>Naikinti profilį</a><br><br>";

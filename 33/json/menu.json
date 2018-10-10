@@ -28,15 +28,20 @@
 
             },
             {
+                "id":"searchform.php",
+                "label":"Paieška"
+            },
+            {
                 "id":"data.php",
                 "label":"Vartotojai" 
             
             },
-        
             {
-                "id":"searchform.php",
-                "label":"Paieška"
+                "id":"lentele.php",
+                "label":"Lentelė"
             }
+        
+            
             
         ]
     }

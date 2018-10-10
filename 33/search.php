@@ -34,7 +34,9 @@ if($result = mysqli_query($conn, $sql)){
                 echo "El.Paštas: " . $row['mail'] . "<br>";
                 echo "Amžius: " . $row['age'] . "<br>";
                 echo "<br>";   
+                if (!empty($row['photo'])){
                 echo "<img src=". $row['photo'] ." alt=\"\"  width='200'  /><br><br>";   
+                }
                 ?>
                 </div>
                 <?php                 

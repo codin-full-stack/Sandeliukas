@@ -55,7 +55,7 @@ if($result = mysqli_query($conn, $sql)){
                 // echo $row['photo'] . " ";
                 
                 
-            ?>
+                ?>
                     </div>
                 </div>
             </div>
