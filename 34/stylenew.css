@@ -108,6 +108,15 @@ tr:hover {
 }
 
 
+.myP1{
+
+    min-height: 850px;
+    width: 100%;
+    position: fixed;
+    left: 0;
+    background-color: rgb(15, 26, 39);
+
+}
 .myP2{
 
     min-height: 850px;
@@ -145,6 +154,31 @@ tr:hover {
     margin-left: auto;
     right:0;
     margin-right: auto;
+}
+
+
+.xmas {
+    height:auto;
+    width: 100%;
+    background-color: #E0E2DB;
+    border-top-style: solid;
+    border-top-width: 2px;
+    border-top-color: #8B2635;
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+    border-bottom-color: #8B2635;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family:Roboto;
+    font-weight: 700;
+    font-size: 24px;
+    color: black;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+   
 }
 
 
@@ -885,6 +919,8 @@ p2{
 
 }
 
+
+
 @media only screen and (max-width: 1280px) {
     .boxpost {
         width: 900px;     
@@ -952,8 +988,7 @@ p2{
     table { 
         border-top: 2px solid rgb(144, 173, 122);
         border-bottom: 2px solid rgb(144, 173, 122);
-       
-    }
+   
     
 	/* Hide table headers (but not display: none;, for accessibility) */
 	thead tr { 
@@ -992,10 +1027,10 @@ p2{
 	/*
 	Label the data
 	*/
-	td:nth-of-type(1):before { content: "Full Name: "; }
-	td:nth-of-type(2):before { content: "Age: "; }
-	td:nth-of-type(3):before { content: "E-mail: "; }
-	td:nth-of-type(4):before { content: "Location:"; }
+	td:nth-of-type(1):before { content: attr(data-title) ": "; }
+	td:nth-of-type(2):before { content: attr(data-title) ": "; }
+	td:nth-of-type(3):before { content: attr(data-title) ": "; }
+	td:nth-of-type(4):before { content: attr(data-title) ": "; }
 
 
   

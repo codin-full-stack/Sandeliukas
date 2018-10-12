@@ -24,14 +24,14 @@ if($result = mysqli_query($conn, $sql)){
             echo "<tbody>";
             echo "<tr>";
            
-                echo "<td><a class='one' href='noadmin.php?id=".$row['id']."'>" . $row['name'] .' '. $row['surname']. "</a></td>";          
-                echo "<td><a class='one' href='noadmin.php?id=".$row['id']."'>" . $row['age'] . "</a></td>";
-                echo "<td><a class='one' href='noadmin.php?id=".$row['id']."'>" . $row['mail'] . "</a></td>";
+                echo "<td data-title='Vardas'><a class='one' href='noadmin.php?id=".$row['id']."'>" . $row['name'] .' '. $row['surname']. "</a></td>";          
+                echo "<td data-title='Amžius'><a class='one'  href='noadmin.php?id=".$row['id']."'>" . $row['age'] . "</a></td>";
+                echo "<td data-title='E-paštas'><a class='one'  href='noadmin.php?id=".$row['id']."'>" . $row['mail'] . "</a></td>";
                 if(! empty($row['city'])) {
-                    echo "<td><a class='one' href='noadmin.php?id=".$row['id']."'>" . cities($row['city']) . "</a></td>";
+                    echo "<td data-title='Miestas'><a class='one'  href='noadmin.php?id=".$row['id']."'>" . cities($row['city']) . "</a></td>";
                 }
                 else{
-                    echo "<td><a class='one' href='noadmin.php?id=".$row['id']."'>" .$row['city']. "</a></td>";
+                    echo "<td data-title='Miestas'><a class='one'  href='noadmin.php?id=".$row['id']."'>" .$row['city']. "</a></td>";
                 }
            
                
