@@ -17,7 +17,7 @@
         <br><br><br>
         <?php 
         if (((!empty($_GET['day']))) and ( $_GET['day']!==date("Y-m-d"))){
-        echo "Iki  <b><font color='red' size='6'>".$_GET['day']."</font></b> liko ";
+        echo "Iki  <b><font color='#E71D36' size='6'>".$_GET['day']."</font></b> liko ";
         $transdate = $_GET['day'];
         $y = date('Y', strtotime($transdate));
         $m = date('m', strtotime($transdate));
@@ -34,12 +34,12 @@
             var d = "<?php echo $d ?>";
             var h = "<?php echo $h ?>";
             var array= daysUntil(y,m,d,h)
-            var header = " <b><font color='red' size='6'> " + array[0]  + ""
+            var header = " <b><font color='#E71D36' size='6'> " + array[0]  + ""
             header += "d.</font></b>  "
             document.write(header)
             var h = "0";
             var array= daysUntil(y,m,d,h)
-            var header = " arba tiksliau <b><font color='red' size='6'> " + array[1]  + ""
+            var header = " arba tiksliau <b><font color='#E71D36' size='6'> " + array[1]  + ""
             header += "val.</font></b>  Ne taip ir daug."
             document.write(header);
 
@@ -49,7 +49,6 @@
     </div>
 
 <div class="xmas">
-<script src="snow.js" async></script>
 </div>
 </div>
 </div>

@@ -20,6 +20,7 @@ require_once "functions.php";
     </title>
     <meta charset="utf-8">
     <script src="functions.js" async></script>
+    <script src="snow.js" async></script>
     
 </head>
 <body>
