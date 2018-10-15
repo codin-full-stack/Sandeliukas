@@ -26,7 +26,7 @@ if($result = mysqli_query($conn, $sql)){
 
         if ( (isUserLogged()) ){
         
-            echo "<br><a href='postnew.php?userid=".$_SESSION['id']."'>Naujas straipsnis >>></a><br><br>"; 
+            echo "<br><a href='postnew.php?userid=".$_SESSION['id']."'>Naujas straipsnis ></a><br><br>"; 
             ?></div><?php 	
 
             while($row = mysqli_fetch_array($result)){ 
@@ -35,7 +35,7 @@ if($result = mysqli_query($conn, $sql)){
                     ?>
                     <div class="box-user">
                     <?php                                 
-                    echo "<br><h1>". $row['title']."</h1>";               
+                    echo "<br><h1 class='one'>". $row['title']."</h1>";               
                     ?>
                     <div class="box-post">
                     <?php             
@@ -44,7 +44,7 @@ if($result = mysqli_query($conn, $sql)){
                     ?>
                     </div>
                     <?php  
-                    echo "<a href='post.php?postid=".$row['postid']."'>Skaityti straipsnį >>></a><br><br>";
+                    echo "<a href='post.php?postid=".$row['postid']."'>Skaityti ></a><br><br>";
                     if (!empty($row['postimg'])){
                         echo "<img src=". $row['postimg'] ." alt=\"\"  width='100%'  /><br><br>";      
                         }     
@@ -62,7 +62,7 @@ if($result = mysqli_query($conn, $sql)){
                     ?>
                     <div class="box-user">
                     <?php 
-                    echo "<br><h1>". $row['title']."</h1>";               
+                    echo "<br><h1 class='one'>". $row['title']."</h1>";               
                     ?>
                     <div class="box-post">
                     <?php             
@@ -71,7 +71,7 @@ if($result = mysqli_query($conn, $sql)){
                     ?>
                     </div>
                     <?php  
-                    echo "<a href='post.php?postid=".$row['postid']."'>Skaityti straipsnį >>></a><br><br>";  
+                    echo "<a href='post.php?postid=".$row['postid']."'>Skaityti ></a><br><br>";  
                     if (!empty($row['postimg'])){
                         echo "<img src=". $row['postimg'] ." alt=\"\"  width='100%'  /><br><br>";      
                         }     
@@ -98,7 +98,7 @@ if($result = mysqli_query($conn, $sql)){
                     ?>
                     <div class="box-user">
                     <?php               
-                    echo "<br><h1>". $row['title']."</h1>";  
+                    echo "<br><h1 class='one'>". $row['title']."</h1>";  
                     ?>
                     <div class="box-post">
                     <?php             
@@ -107,7 +107,7 @@ if($result = mysqli_query($conn, $sql)){
                     ?>
                     </div>
                     <?php 
-                    echo "<a href='post.php?postid=".$row['postid']."'>Skaityti straipsnį >>></a><br><br>";    
+                    echo "<a href='post.php?postid=".$row['postid']."'>Skaityti ></a><br><br>";    
                     if (!empty($row['postimg'])){
                         echo "<img src=". $row['postimg'] ." alt=\"\"  width='100%'  /><br><br>";      
                         }     
@@ -125,7 +125,7 @@ if($result = mysqli_query($conn, $sql)){
                     ?>
                     <div class="box-user">
                     <?php
-                    echo "<br><h1>". $row['title']."</h1>";               
+                    echo "<br><h1 class='one'>". $row['title']."</h1>";               
                     ?>
                     <div class="box-post">
                     <?php             
@@ -133,7 +133,7 @@ if($result = mysqli_query($conn, $sql)){
                     ?>
                     </div>
                     <?php   
-                    echo "<a href='post.php?postid=".$row['postid']."'>Skaityti straipsnį >>></a><br><br>"; 
+                    echo "<a href='post.php?postid=".$row['postid']."'>Skaityti ></a><br><br>"; 
                     if (!empty($row['postimg'])){
                         echo "<img src=". $row['postimg'] ." alt=\"\"  width='100%'  /><br><br>";      
                         }    

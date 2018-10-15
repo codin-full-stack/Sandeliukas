@@ -76,6 +76,7 @@ a.one:hover, a.one:visited, a.one:link, a.one:active
     font-size: 16px;
     text-decoration: none;
     color: #000000;
+    
 }
 
 td {
@@ -569,6 +570,7 @@ label.cabinet {
     overflow: hidden;
     cursor: pointer;
   
+  
 }
 
 label.cabinet:hover{
@@ -576,8 +578,8 @@ label.cabinet:hover{
 }
  
 
-
 label.cabinet input.file {
+   
     position: relative;
     width: 100%;
     height: 50px;

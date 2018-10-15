@@ -24,7 +24,7 @@ ORDER BY hint.time DESC";
                 <div class="box-title">
                     <div class="box-heading">
                     <?php echo $row['title'];?>
-                    <?php echo "<p2><br><a style='color:lightblue' href='post.php?postid=".$row['postid']."'>Skaityti straipsnį >>></a></p2>"; ?>
+                    <?php echo "<p2><br><a class='two' style='color:lightblue' href='post.php?postid=".$row['postid']."'>Skaityti ></a></p2>"; ?>
                     </div>
                 </div>
             
