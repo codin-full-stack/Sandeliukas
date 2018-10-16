@@ -4,7 +4,7 @@
 
 <div class="dropdown">
   <button class="dropbtn" onclick="menu()">|||</button>
-  <div class="dropdown-content">
+  <div class="dropdown-content" name='meniu'>
     <?php
     require_once "functions.php";
     $json = file_get_contents(filePath('json','','menu'));

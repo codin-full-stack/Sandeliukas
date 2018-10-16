@@ -729,12 +729,12 @@ p2{
     display: block;
 } */
 
-.dropdown:hover .dropbtn {
+/* .dropdown:hover .dropbtn {
     background-color: #FF9F1C;
     cursor: default;
     transform: rotate(180deg);
     transition: all 0.3s ease-in-out 0s;
-}
+} */
 
 .container {
     display: flex; /* or inline-flex */   
