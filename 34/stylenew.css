@@ -645,12 +645,11 @@ p2{
     
 }
 
-/* 
+
 .menu {
-    top: 40px;
-    float: left;
-    left: 0;
     position: fixed;
+    top: 3px;
+    
 }
 
 
@@ -665,7 +664,7 @@ p2{
     padding: 8px 16px;
     text-decoration: none;
     font-weight: bold;
-     font-family: Roboto;
+    font-family: Roboto;
     font-size: 14px;
 }
 
@@ -676,11 +675,12 @@ p2{
     background-color:#E71D36;
     color:#2EC4B6;
 
-} */
+}
 
 
 
 .dropbtn {
+    visibility: hidden;
     position: relative;
     height: 40px;
     width: 40px;
@@ -725,9 +725,9 @@ p2{
     background-color: #2EC4B6;
 }
 
-.dropdown:hover .dropdown-content {
+/* .dropdown:hover .dropdown-content {
     display: block;
-}
+} */
 
 .dropdown:hover .dropbtn {
     background-color: #FF9F1C;
@@ -936,6 +936,13 @@ p2{
 
 @media only screen and (max-width: 768px) {
 
+    .dropbtn {
+        visibility: visible;
+    }
+
+    .menu {
+        visibility: hidden;
+    }
     
 
   
@@ -981,6 +988,14 @@ p2{
 
 
 @media only screen and (max-width: 375px) {
+
+    .dropbtn {
+        visibility: visible;
+    }
+
+    .menu {
+        visibility: hidden;
+    }
 
     /* Force table to not be like tables anymore */
 	table, thead, tbody, th, td, tr { 

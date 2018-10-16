@@ -1,4 +1,7 @@
 
+
+
+
 var users = document.querySelectorAll(".box-heading_data")
 
   for (var i = 0;  i < users.length; i++) {
@@ -63,3 +66,14 @@ el.innerHTML="O iki kalėdų liko  "+ array['0']+"  d.";
 console.log(el);
 
 
+document.querySelector(".btn").addEventListener("click", displayDate);
+document.querySelector(".inp").addEventListener("change", displayDate);
+function displayDate() {
+    document.querySelector(".subpanel").innerHTML = Date();
+}
+
+document.querySelector(".dropbtn").addEventListener("click", menu);
+
+function menu() {
+  document.querySelector(".dropdown-content");
+}

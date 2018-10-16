@@ -22,17 +22,13 @@
         </div>
      
     <div class="subpanel">
-    <input class="inp" type="text" name="name"><br>
+    <input class="inp" type="text" name="name" onchange="displayDate()"><br>
     <button class="btn">taip</button>  
     <button class="btn" onclick="displayDate()">taip</button>
     </div>
     </div>
     <script>
-    document.querySelector(".btn").addEventListener("click", displayDate);
 
-    function displayDate() {
-        document.querySelector(".subpanel").innerHTML = Date();
-    }
     </script>
 </body>
 <?php include "footer.php";?>
