@@ -28,7 +28,7 @@
                             'surname'=>$row['surname'],
   
                         ];
-                        header("Location:admin.php");
+                     header("Location:admin.php");
                         // echo "<br>Prisijungimas pavyko<br><a href='admin.php'>Vartotojo zona</a>";
 
                     }

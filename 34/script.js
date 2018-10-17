@@ -78,23 +78,29 @@ function menu() {
  
   if (bt.style.backgroundColor != "#FF9F1C") {
     bt.style.backgroundColor="#FF9F1C";
+    bt.style.width="644%";
     bt.style.cursor="pointer";
     bt.style.transform="rotate(180deg)";
-    bt.style.transition="all 0.3s ease-in-out 0s";
+    bt.style.transition="all 0.2s ease-in-out 0s";
     var block = document.querySelectorAll(".dropdown-content");
     for (var i = 0;  i < block.length; i++) {
     block[i].style.display="block" ;
+    
+
+    
 
     }
   }
   else if(bt.style.backgroundColor == "#FF9F1C"){
     bt.style.backgroundColor="#2EC4B6";
+    bt.style.width="40px";
     bt.style.cursor="default";
     bt.style.transform="rotate(90deg)";
-    bt.style.transition="all 0.3s ease-in-out 0s";
+    bt.style.transition="all 0.2s ease-in-out 0s";
     var block = document.querySelectorAll(".dropdown-content");
     for (var i = 0;  i < block.length; i++) {
     block[i].style.display="none" ;
+
     }
   }
 }
