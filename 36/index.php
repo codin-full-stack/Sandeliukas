@@ -24,41 +24,59 @@
         </div>
 
         <div class='panel-down'>
-            <button type="submit" class='button-num' name="A/C" value="Hello">A/C</button>
-            <button type="submit" class='button-num symb' name="-" value="-" >+/-</button>
-            <button type="submit" class='button-num symb' name="%" value="%" >%</button>
-            <button type="submit" class='button-num symb' name="/" value="/" >/</button>
-            <button type="submit" class='button-num' name="7" value="7" >7</button>
-            <button type="submit" class='button-num' name="8" value="8" >8</button>
-            <button type="submit" class='button-num' name="9" value="9" >9</button>
-            <button type="submit" class='button-num symb' name="*" value="*" >x</button>
-            <button type="submit" class='button-num' name="4" value="4" >4</button>
-            <button type="submit" class='button-num' name="5" value="5" >5</button>
-            <button type="submit" class='button-num' name="6" value="6" >6</button>
-            <button type="submit" class='button-num symb' name="-" value="-" >-</button>
-            <button type="submit" class='button-num' name="1" value="1" >1</button>
-            <button type="submit" class='button-num' name="2" value="2" >2</button>
-            <button type="submit" class='button-num' name="3" value="3" >3</button>
-            <button type="submit" class='button-num symb' name='+' value='+' >+</button>
-            <button type="submit" class='button-num long' name="0" value="0" >0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</button>
-            <button type="submit" class='button-num' name="," value="," >,</button>
-            <button type="submit" class='button-num symb' name="=" value="=" >=</button>
+            <button class='button-num' data-value="A/C">A/C</button>
+            <button class='button-num symb' data-value="-" >+/-</button>
+            <button class='button-num symb' data-value="%" >%</button>
+            <button class='button-num symb' data-value="/" >/</button>
+            <button class='button-num' data-value="7" >7</button>
+            <button class='button-num' data-value="8" >8</button>
+            <button class='button-num' data-value="9" >9</button>
+            <button class='button-num symb' data-value="*" >x</button>
+            <button class='button-num' data-value="4" >4</button>
+            <button class='button-num' data-value="5" >5</button>
+            <button class='button-num'data-value="6" >6</button>
+            <button class='button-num symb' data-value="-" >-</button>
+            <button class='button-num' data-value="1" >1</button>
+            <button class='button-num' data-value="2" >2</button>
+            <button class='button-num' data-value="3" >3</button>
+            <button class='button-num symb' data-value='+' >+</button>
+            <button class='button-num long' data-value="0" >0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</button>
+            <button class='button-num' data-value="," >,</button>
+            <button class='button-num symb' data-value="=" >=</button>
         </div>
     </div>
 
 <script>
 
-var rez = document.querySelector(".input").value;
+// var rez = document.querySelector(".input").value;
 
 
 
-function result() {
-    rezo=document.querySelector(".button-num").value;
-    rez=rez+rezo;
-    document.querySelector(".input").value=rez;
+function result(button) {
+    console.log(button);
+    // if (rez=='0'){
+    //     rez='';
+    // }
+    // val=button.value;
+    // console.log(val);
+    // rez=rez+val;
+
+    // document.querySelector(".input").value=rez;
+    
 }
 
-document.querySelector(".button-num").addEventListener("click", result);
+var btn = document.querySelectorAll(".button-num");
+
+for (var xi = 0; xi < btn.length; xi++) {
+    console.log(btn[xi]);
+    btn[xi].addEventListener("click", function(e) {
+        e.preventDefault();
+        console.log(e);
+        result(btn[xi]);
+    });
+    // console.log(btn[i].value);
+
+}
 
 
 
