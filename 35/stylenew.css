@@ -1,4 +1,4 @@
-body {
+Ibody {
     font-family:Lora;
     background-color:#011627;
     font-size: 18;
@@ -695,6 +695,7 @@ p2{
     transform: rotate(90deg);
     transition: all 0.2s ease-in-out 0s;
     transition-timing-function: linear;
+    z-index: 100;
 }
 
 
@@ -716,10 +717,8 @@ p2{
     width: 160px;
     box-shadow: 0px 8px 20px 3px #00000033;
     z-index: 1;
- 
-    
-
- 
+    top: -500px;
+    transition: 1s;
 }
 
 .dropdown-content a {
@@ -963,9 +962,23 @@ p2{
 
 }
 
+
+@media only screen and (min-width: 768px) {
+
+    .dropdown, .dropbtn {
+        display: none;
+        visibility: hidden;
+    }
+
+    .menu {
+        visibility: visible;
+    }
+}
+
 @media only screen and (max-width: 768px) {
 
-    .dropbtn {
+    .dropdown, .dropbtn {
+        display: block;
         visibility: visible;
     }
 
@@ -1017,14 +1030,6 @@ p2{
 
 
 @media only screen and (max-width: 375px) {
-
-    .dropbtn {
-        visibility: visible;
-    }
-
-    .menu {
-        visibility: hidden;
-    }
 
     /* Force table to not be like tables anymore */
 	table, thead, tbody, th, td, tr { 

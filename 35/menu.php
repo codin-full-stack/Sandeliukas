@@ -1,7 +1,5 @@
 <link rel="stylesheet" href="style.css">
 
-
-
 <div class="dropdown">
   <button class="dropbtn" onclick="menu()">|||</button>
   <div class="dropdown-content" name='meniu'>
