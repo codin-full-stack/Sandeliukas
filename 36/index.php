@@ -20,7 +20,7 @@
 
             </div>
             <div class='panel-input'>
-                <input class='input' type='text' value='0' onchange="result2()">
+                <input class='input' type='text' value='0' >
             </div>
         </div>
 

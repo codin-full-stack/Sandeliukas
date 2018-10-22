@@ -92,4 +92,7 @@ for (var xi = 0; xi < btn.length; xi++) {
 
 }
 
+rez.addEventListener("change", function() {
 
+    result2();
+});
