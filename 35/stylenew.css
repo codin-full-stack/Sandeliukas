@@ -1,6 +1,6 @@
-Ibody {
+body {
     font-family:Lora;
-    background-color:#011627;
+    /* background-color:#011627; */
     font-size: 18;
     color:#000000;
     margin-top: 40px;
@@ -654,12 +654,14 @@ p2{
 
 
 .menu a {
-    display: inline-block;
+    display: block;
+    float: left;
     background-color:#2EC4B6;
     width: 100px;
-    border-style: solid;
-    border-color:#ffffff;
-    border-width: 2px;
+    border-bottom-style: solid;
+    border-bottom-color:#011627;
+    border-bottom-width: 2px;
+    border-bottom-right-radius: 10px;
     color: #E71D36;
     padding: 6px 6px;
     text-decoration: none;
@@ -682,21 +684,27 @@ p2{
 .dropbtn {
     visibility: hidden;
     position: relative;
-    height: 40px;
-    width: 40px;
+    height: 35px;
+    width: 35px;
     left: 0;
-    top: 0;
+    top: 2px;
     background-color: #2EC4B6;
     /* -webkit-transition: width 2s, height 2s, background-color 2s, -webkit-transform 2s; */
     color: white;
     padding: 25%;
     font-size: 16px;
-    border: none;
+    border:none;
+    border-right-style: solid;
+    border-right-color:#011627;
+    border-right-width: 2px;
+    border-top-right-radius: 10px;
     transform: rotate(90deg);
     transition: all 2s ease-in-out 0s;
     transition-timing-function: linear;
     z-index: 100;
+    outline: none;
 }
+
 
 
 .dropdown {

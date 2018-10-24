@@ -1,14 +1,11 @@
-<?php include 'header.php'; 
-
+<?php include 'header.php';?>
+<?php
 $sql = "SELECT hint.userid, hint.postid, hint.title, hint.content, hint.postimg, person_information.name, person_information.surname, person_information.photo, hint.date, hint.time
 FROM hint
 JOIN person_information ON hint.userid = person_information.id
 ORDER BY hint.time DESC";
-?>
-   
-  
-    <div class="container">
-       
+?>  
+<div class="container">       
     <?php 
     if($result = mysqli_query($conn, $sql)){
         if(mysqli_num_rows($result) > 0){ 
@@ -42,11 +39,9 @@ ORDER BY hint.time DESC";
         echo "ERROR: Could not able to execute $sql. " . mysqli_error($conn);
     }
     ?>
-   
-    </div>        
+</div>        
 
 
 <?php
-
 include 'footer.php';
 ?>
