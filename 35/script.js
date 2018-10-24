@@ -75,7 +75,7 @@ function displayDate() {
 document.querySelector(".dropbtn").addEventListener("click", menu);
 function menu() {
   var bt = document.querySelector(".dropbtn");
-  console.log(bt);
+ 
   if(bt){
     if (bt.classList.contains('active')) {
       bt.classList.remove('active');
