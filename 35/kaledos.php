@@ -27,6 +27,7 @@
         $h = date('H', strtotime($trans));
         $m=$m-1;
         }
+        
         ?>
         <script>
             var y = "<?php echo $y ?>";

@@ -72,7 +72,7 @@
 				}
 		?> 
 		<br><br>
-		<button type="submit" class="button">Atgal</button>    
+		<?php header("Location:logform.php");?>
 	</form>
 </div>
 
